@@ -1,0 +1,17 @@
+# save_ridge_pipeline.py
+from joblib import load, dump
+
+# Load komponen
+model = load("model/predict.joblib")
+scaler = load("model/scaler.joblib")
+encoder = load("model/encode.joblib")
+
+# Simpan sebagai pipeline
+from sklearn.pipeline import Pipeline
+pipeline = Pipeline([
+    ('scaler', scaler),
+    ('encoder', encoder),
+    ('model', model)
+])
+
+dump(pipeline, "model/ridge_pipeline.joblib")
