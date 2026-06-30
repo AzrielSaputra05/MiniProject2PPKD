@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas as pd
+# import pandas as pd
 from essentials import load_data
 
 st.set_page_config(

@@ -9,10 +9,12 @@ def load_data():
     """Load dataset"""
     try:
         possible_paths = [
-            "DataSeta-PredictRevenue/AyamSerayu_Predict.zip",
-            "DataSeta-PredictRevenue/AyamSerayu_Predict.csv",
+            "DataSets-PredictRevenue/AyamSerayu_Predict.zip",
+            "DataSetsa-PredictRevenue/AyamSerayu_Predict.zip",
+            "DataSets-PredictRevenue/AyamSerayu_Predict.csv",
+            "DataSetsa-PredictRevenue/AyamSerayu_Predict.csv",
             "AyamSerayu_Predict.zip",
-            "AyamSerayu_Predict.csv",
+            "AyamSerayu_Predict.csv"
         ]
         
         for path in possible_paths:
